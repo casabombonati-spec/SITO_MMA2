@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="it">
+<head>
+<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Diario di allenamenti, sparring e incontri del nostro fight club. Boxe, MMA e kickboxing.">
+  <title>Fighting Negrs — Fight Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Fighting Negrs, home"><span class="brand-mark">FN</span><span>FIGHTING<br>NEGRS<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#crew">La crew</a><a href="#fightlog">Fight log</a><a href="#eventi">Prossimi round</a><a href="#media">Media</a>
+      <a class="nav-cta" href="#contatti">Unisciti <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="ring ring-one"></div><div class="ring ring-two"></div><div class="silhouette"></div><div class="vertical-label">NO CROWD. NO GLORY. JUST WORK.</div></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="live-dot"></span> CASABOMBONATI· DAL 2026</p>
+        <h1>BUILT<br>IN THE <em>GARAGE.</em></h1>
+        <p class="hero-copy">Niente luci. Niente scuse. Solo guantoni, sudore e rispetto. Una crew, tre discipline, round senza fine.</p>
+        <div class="hero-actions"><a class="button button-red" href="#crew">SCOPRI LA CREW <span>↘</span></a><a class="text-link" href="#fightlog">IL NOSTRO FIGHT LOG <span>↗</span></a></div>
+      </div>
+      <div class="hero-foot"><span>BOXE <b>·</b> MMA <b>·</b> KICKBOXING</span><span class="hero-location">GARAGE GYM / ITALIA</span></div>
+      <div class="hero-stamp">EST.<br><strong>2021</strong></div>
+    </section>
+
+    <section class="ticker" aria-label="Discipline"><div>HANDS UP <i>✳</i> EYES OPEN <i>✳</i> EARN EVERY ROUND <i>✳</i> NO SHORTCUTS <i>✳</i> HANDS UP <i>✳</i> EYES OPEN <i>✳</i> EARN EVERY ROUND <i>✳</i> NO SHORTCUTS <i>✳</i></div></section>
+
+    <section class="section crew-section" id="crew">
+      <div class="section-heading"><div><p class="eyebrow">01 / CHI SIAMO</p><h2>THE <em>CREW.</em></h2></div><p class="section-note">Amici prima. Compagni di round sempre.<br>Qui ogni soprannome si guadagna.</p></div>
+      <div class="crew-grid">
+        <article class="fighter-card card-featured"><div class="fighter-number">01</div><div class="fighter-avatar avatar-red">R</div><div class="fighter-info"><h3>SIM <span>“IL TESTADICAZZO”</span></h3><p>Boxe<b>●</b> 12 round</p></div><div class="fighter-record"><strong>08</strong><small>W</small><strong>04</strong><small>L</small></div></article>
+        <article class="fighter-card"><div class="fighter-number">02</div><div class="fighter-avatar avatar-gray">M</div><div class="fighter-info"><h3>LOLLO <span>"IL NEGRO"</span></h3><p>Kickboxing <b>●</b> 39 round</p></div><div class="fighter-record"><strong>39</strong><small>W</small><strong>0</strong><small>L</small></div></article>
+        <article class="fighter-card"><div class="fighter-number">03</div><div class="fighter-avatar avatar-olive">L</div><div class="fighter-info"><h3>GARY <span>"IL GAY"</span></h3><p>Boxe <b>●</b> 32 round</p></div><div class="fighter-record"><strong>20</strong><small>W</small><strong>12</strong><small>L</small></div></article>
+        <article class="fighter-card"><div class="fighter-number">04</div><div class="fighter-avatar avatar-gold">A</div><div class="fighter-info"><h3>NICO <span>"IL COGLIONE"</span></h3><p>Kickboxing <b>●</b> 39 round</p></div><div class="fighter-record"><strong>37</strong><small>W</small><strong>02</strong><small>L</small></div></article>
+      </div>
+    </section>
+
+    <section class="fight-section" id="fightlog">
+      <div class="section fight-inner"><div class="section-heading"><div><p class="eyebrow">02 / IL CONTATORE</p><h2>ROUNDS <em>DONE.</em></h2></div><p class="section-note">Ogni round lascia il segno.<br>Questo contatore è salvato su questo dispositivo.</p></div>
+        <div class="counter-panel"><div class="counter-main"><span class="counter-label">ROUND TOTALI REGISTRATI</span><div class="counter-number" id="round-count" aria-live="polite">000</div><span class="counter-sub">UN ROUND ALLA VOLTA.</span></div><div class="counter-stats"><div><strong>03</strong><span>DISCIPLINE</span></div><div><strong>∞</strong><span>ROUND ANCORA</span></div><button class="button button-outline" id="add-round">+ REGISTRA UN ROUND</button><button class="reset-link" id="reset-rounds">azzera il contatore</button></div></div>
+      </div>
+    </section>
+
+    <section class="section events-section" id="eventi"><div class="section-heading"><div><p class="eyebrow">03 / PROSSIMI ROUND</p><h2>ON THE <em>CALENDAR.</em></h2></div><span class="tag">SOLO INVITATI</span></div>
+      <div class="event-list"><article class="event"><div class="event-date"><strong>18</strong><span>OTT · SAB</span></div><div class="event-title"><h3>SPARRING NIGHT</h3><p>Boxe tecnica · guanti 16 oz · protezioni obbligatorie</p></div><span class="event-type">BOXE</span><span class="event-arrow">↗</span></article><article class="event"><div class="event-date"><strong>22</strong><span>OTT · MER</span></div><div class="event-title"><h3>GRAPPLING + MMA</h3><p>Drill a coppie · intensità controllata</p></div><span class="event-type">MMA</span><span class="event-arrow">↗</span></article><article class="event"><div class="event-date"><strong>25</strong><span>OTT · SAB</span></div><div class="event-title"><h3>OPEN MAT</h3><p>Sacco, tecnica e round leggeri · porta acqua</p></div><span class="event-type">MIXED</span><span class="event-arrow">↗</span></article></div>
+      <p class="fine-print">Date di esempio: aggiornale prima di pubblicare. Per sicurezza, l'indirizzo di casa non è mostrato pubblicamente.</p>
+    </section>
+
+    <section class="media-section" id="media"><div class="section media-inner"><div><p class="eyebrow">04 / DOPO IL BELL</p><h2>PROOF OF <em>WORK.</em></h2><p class="media-copy">I lividi passano. Le storie restano.<br>Un diario della crew, round dopo round.</p><a class="text-link" href="#contatti">AGGIUNGI UNA FOTO <span>↗</span></a></div><div class="media-grid"><div class="media-tile tile-one"><span>01 / THE BAG</span><strong>WORK<br>IN SILENCE.</strong></div><div class="media-tile tile-two"><span>02 / THE CREW</span><strong>AFTER<br>THE BELL.</strong></div><div class="media-tile tile-three"><span>03 / THE ROUND</span><strong>NO EASY<br>ROUNDS.</strong></div></div></div></section>
+
+    <section class="section contact-section" id="contatti"><p class="eyebrow">05 / CI SEI?</p><h2>SHOW UP.<br><em>PUT THE WORK IN.</em></h2><div class="contact-bottom"><p>Vuoi allenarti con noi? Scrivici prima.<br>Il gruppo è piccolo, gli inviti si guadagnano.</p><a class="button button-red" href="mailto:crew@example.com?subject=Allenamento%20con%20la%20crew">SCRIVI ALLA CREW <span>↗</span></a></div><p class="fine-print">Sostituisci crew@example.com con un contatto dedicato prima di pubblicare. Non inserire l'indirizzo di casa.</p></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">FN</span><span>FIGHTING<br>NEGRS<span class="brand-dot">.</span></span></a><span>BUILT BY THE CREW · © <span id="year"></span></span><a href="#home">TORNA SU ↑</a></footer>
+<script>
+  const countElement = document.querySelector('#round-count');
+  const storageKey = 'fn-round-count';
+
+  let count = Number.parseInt(localStorage.getItem(storageKey) || '0', 10);
+
+  function renderCount() {
+    countElement.textContent = String(count).padStart(3, '0');
+  }
+
+  document.querySelector('#add-round').addEventListener('click', () => {
+    count += 1;
+    localStorage.setItem(storageKey, String(count));
+    renderCount();
+  });
+
+  document.querySelector('#reset-rounds').addEventListener('click', () => {
+    if (window.confirm('Vuoi azzerare il contatore su questo dispositivo?')) {
+      count = 0;
+      localStorage.setItem(storageKey, '0');
+      renderCount();
+    }
+  });
+
+  const menuButton = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+
+  menuButton.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute(
+      'aria-label',
+      isOpen ? 'Chiudi menu' : 'Apri menu'
+    );
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Apri menu');
+    });
+  });
+
+  document.querySelector('#year').textContent = new Date().getFullYear();
+
+  renderCount();
+</script>
+</body>
+</html>
